@@ -13,8 +13,8 @@ license = "MIT/Apache-2.0"
 edition = "2018"
 
 [dependencies]
-ark-serialize-derive = { version = "^0.3.0", path = "../serialize-derive", optional = true }
-ark-std = { version = "^0.3.0", default-features = false }
+ark-std = {git = "https://github.com/ChorusOne/std", branch = "giulio/random_feature", default-features = false}
+ark-serialize-derive = {path = "../serialize-derive", optional = true }
 digest = { version = "0.9", default-features = false }
 
 [dev-dependencies]
